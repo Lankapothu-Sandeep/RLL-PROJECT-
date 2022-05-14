@@ -1,0 +1,29 @@
+
+<div>
+  <div class="jumbotron" style="justify-content: center;text-align: -webkit-center;">
+    <div class="container-fluid">
+    
+    <div class="m-3 px-5 py-2 justify-content-center" style="width: 50%;background: #080708ed;width: 50%;color: cornsilk;">
+      <div class="text-center">
+        <h1 class="my-3" style="color:cornsilk">Admin Login</h1>
+    </div> 
+        <form [formGroup]="aLogin" (ngSubmit)="loginAdmin()">
+            <div class="form-group" style="text-align:start;">
+              <label for="exampleInputEmail1"><i class="fa fa-user"></i> User Name</label>
+              <input type="email" name="ausername" formControlName="ausername" placeholder="Please Enter User Name" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              
+            </div>
+            <div class="form-group" style="text-align:start;">
+              <label for="exampleInputPassword1"><i class="fa fa-key"></i> Password</label>
+              <input type="password" name="apassword" formControlName="apassword" placeholder="Please Enter Password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <button type="submit" class="btn btncust">Login</button>
+          </form>
+          <div class="text-center text-danger">
+            <h2 *ngIf="invalid">{{invalid}}</h2>
+          </div>
+    </div>
+  </div>
+</div>  
+</div>
+

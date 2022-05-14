@@ -1,0 +1,35 @@
+.container-fluid{
+    padding: 0px;
+    padding-top:115px;
+    height:100vh;
+    background:url('../../../assets/images/slider5.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+    .container-fluid{
+        text-align :start;
+        font-size: 18px;
+    } 
+    .btncust{
+        border: #403740;
+    background: cornsilk;
+    color: #403740;
+    font-weight: bold;
+    }
+     .btncust:hover{
+    background: #403740;
+    color: cornsilk;
+    font-weight: bold;
+    }
+    .form-group{
+        text-align :start;
+    }
+    table{
+    BORDER-RADIUS: 7px;
+    overflow: hidden;
+    background-color: #090907a3;
+    color:cornsilk;
+    }
+   
+    

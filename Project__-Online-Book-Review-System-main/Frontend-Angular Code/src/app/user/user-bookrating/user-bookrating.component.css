@@ -1,0 +1,31 @@
+.checked {
+    color: rgb(207, 171, 63);
+  }
+  .container-fluid{
+    padding: 0px;
+    padding-top:20px;
+    height:100vh;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+    .container-fluid{
+        text-align :start;
+        font-size: 18px;
+    } 
+    .card-body{
+        float: middle;
+        border: #403740;
+    background: rgba(255, 248, 220, 0.099);
+    color: #403740;
+    font-weight: bold;
+    }
+   .card{
+     color: rgba(0, 0, 0, 0.684);
+   }
+   h4{
+     text-align: start;
+    font-family: 'Libreaskerville', sans-serif;
+   }
+   

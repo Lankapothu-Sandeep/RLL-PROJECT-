@@ -1,0 +1,53 @@
+
+<div class="jumbotron" style="justify-content: center;text-align: -webkit-center;">
+    <div class="container">
+       
+          
+        <div class="m-3 px-5 py-2 justify-content-center" style="width: 50%;background: #24130bd1;width: 50%;color: cornsilk;">
+            <div class="text-center">
+              <h1 class="my-3" style="color:cornsilk">User Registration</h1>
+            <form [formGroup]="addUser" (ngSubmit)="insertUser(addUser.value)">
+                
+                    <div class="form-group">
+                        <label for="exampleInputEmail1"> <i class="fa fa-user"></i> First Name</label>
+                        <input type="text" name="firstname" formControlName="firstname" placeholder="Please Enter First Name" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    </div>
+               
+    
+               
+                    <div class="form-group">
+                        <label for="exampleInputEmail1"> <i class="fa fa-user"></i> Last Name</label>
+                        <input type="text" name="lastname" formControlName="lastname" placeholder="Please Enter Last Name" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    </div>
+              
+    
+                <div class="form-group">
+                    <label for="exampleInputEmail1"> <i class="fa fa-envelope"></i> Email Address</label>
+                    <input type="email" name="email" formControlName="email" class="form-control" placeholder="Please Enter Email Address" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+    
+                
+                    <div class="form-group">
+                        <label for="exampleInputEmail1"> <i class="fa fa-mobile"></i> Mobile Number</label>
+                        <input type="number" name="phone" formControlName="phone" class="form-control" placeholder="Please Enter Mobile Number" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    </div>
+               
+    
+              
+                    <div class="form-group">
+                        <label for="exampleInputEmail1"><i class="fa fa-map-marker"></i> Address</label>
+                        <input type="text" name="address" formControlName="address" class="form-control" placeholder="Please Enter Address" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    </div>
+              
+    
+                <div class="form-group">
+                    <label for="exampleInputPassword1"> <i class="fa fa-key"></i> Password</label>
+                    <input type="password" name="password" formControlName="password" placeholder="Please Enter Password" class="form-control" id="exampleInputPassword1">
+                </div>
+    
+                <button type="submit" class="btn btncust">Register</button>
+            </form>
+        </div>
+    
+    </div>
+    </div>

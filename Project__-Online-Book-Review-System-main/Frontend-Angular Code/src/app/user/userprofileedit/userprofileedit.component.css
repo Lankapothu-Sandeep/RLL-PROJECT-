@@ -1,0 +1,28 @@
+.container-fluid{
+    padding: 0px;
+    padding-top:5px;
+    height:100vh;
+    background:url('../../../assets/images/slider1.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+    label{
+        text-align :start;
+        font-size: 18px;
+    }
+    .btncust{
+        float: right;
+    background: cornsilk;
+    color: #403740;
+    font-weight: bold;
+    }
+     .btncust:hover{
+        float: right;
+    background: #403740;
+    color: cornsilk;
+    font-weight: bold;
+    }
+    .form-group{
+        text-align :start;
+    }

@@ -1,0 +1,31 @@
+<app-aheader></app-aheader>
+    <div class="container my-5">
+
+      <div class="text-center my-4 text-dark">
+        <h1><u>Rating & Review List</u></h1>
+      </div>
+
+        <table class="table table-dark">
+            <thead>
+              <tr>
+                <th scope="col">Id</th>
+                <th scope="col">Book</th>
+                <th scope="col">User</th>
+                <th scope="col">Rating</th>
+                <th scope="col">Comments</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor = "let rev of reviews">
+                <th scope="row">{{rev.id}}</th>
+                <td>{{ rev.bookname }}</td>
+                <td>{{ rev.name }}</td>
+                <td>{{ rev.rating }}</td>
+                <td>{{ rev.review }}</td>
+                
+              </tr>
+            </tbody>
+          </table>
+      </div>
+
+<app-afooter></app-afooter>

@@ -1,0 +1,28 @@
+div{
+    text-decoration-color: white;
+}
+form{
+    text-decoration: aqua;
+}
+.jumbotron{
+height:100vh;
+background:url('../../../assets/images/bookstore-7048241_1920.jpg');
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+label{
+    font-size: 18px;
+}
+.btncust{
+   
+background: cornsilk;
+color: #403740;
+font-weight: bold;
+}
+ .btncust:hover{
+    
+background: #403740;
+color: cornsilk;
+font-weight: bold;
+}

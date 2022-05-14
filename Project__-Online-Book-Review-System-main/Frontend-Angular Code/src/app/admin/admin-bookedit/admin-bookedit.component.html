@@ -1,0 +1,34 @@
+<app-aheader></app-aheader>
+<div class="container my-5">
+  <form [formGroup]="updtBook" (ngSubmit)="updateBook(updtBook.value)">
+      <div class="form-group">
+          <label for="inputAddress2">Author</label>
+          <input type="text" name="author" class="form-control" formControlName="author" id="inputAddress2"
+              placeholder="Enter author name" [ngModel]="book.author">
+      </div>
+      <div class="form-group">
+          <label for="inputEmail4">Book Name</label>
+          <input type="text" name="name" formControlName="name" class="form-control" id="inputEmail4"
+              placeholder="Enter book name" [ngModel]="book.name">
+      </div>
+      <div class="form-group">
+          <label for="inputPassword4">Price</label>
+          <input type="number" name="price" formControlName="price" class="form-control" id="inputPassword4"
+              placeholder="Enter price" [ngModel]="book.price">
+      </div>
+      <div class="form-group">
+          <label for="inputAddress2">Category</label>
+          <input type="text" name="category" class="form-control" formControlName="category" id="inputAddress2"
+              placeholder="Enter category" [ngModel]="book.category">
+      </div>
+       <!-- <div class="form-group">
+        <label for="inputAddress2">Seller</label>
+        <input type="text" name="Seller" class="form-control" formControlName="form-control" id="inputAddress2"
+            placeholder="Enter Seller" [ngModel]="book.Seller">
+      </div> -->
+      
+      <button type="submit" class="btn btn-primary">Update book</button>
+  </form>
+</div>
+<br><br><br><br><br><br><br><br>
+<app-afooter></app-afooter>

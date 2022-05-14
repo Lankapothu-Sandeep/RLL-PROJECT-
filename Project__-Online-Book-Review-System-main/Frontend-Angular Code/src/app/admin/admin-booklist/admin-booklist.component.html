@@ -1,0 +1,48 @@
+<app-aheader></app-aheader>
+<div class="container my-5">
+
+    <div class="text-center my-4 text-dark">
+        <h1><u>Book List</u></h1>
+      </div>
+
+    <div class="my-5">
+        <button class="btn btn-lg btn-warning" (click)="addbook()">Add new book</button>
+    </div>
+
+    <table class="table table-dark">
+        <thead>
+            <tr>
+                <th scope="col">id</th>
+                <th scope="col">Author</th>
+                <th scope="col">Name</th>
+                <th scope="col">Price</th>
+                <th scope="col">Category</th>
+                 <th scope="col">seller</th>
+                <th scope="col">Actions</th>
+                
+            </tr>
+        </thead>
+        <tbody>
+
+            <tr id="myrow_{{i}}" *ngFor = "let bk of books; let i = index">
+                <th scope="row">{{ i+2 }}</th>
+                <td>{{ bk.author }}</td>
+                <td>{{ bk.name }}</td>
+                <td>{{ bk.price }}</td>
+                <td>{{ bk.category }}</td>
+                <td>{{ bk.seller }}</td>
+                
+                
+                <td>
+                    <button id="edt_{{i}}" class="btn btn-sm btn-warning"(click)="editBook(bk.id)">Edit</button>&nbsp;&nbsp;&nbsp;
+                    <button id="det_{{i}}" class="btn btn-sm btn-danger" (click)="deleteBook(bk.id)">Delete</button>&nbsp;&nbsp;&nbsp;
+                    <button id="disbutt_{{i}}" class="btn btn-sm btn-info" (click)="distoggle(i)">{{ disableBtn }}</button>
+                </td>&nbsp;&nbsp;
+            </tr>
+            
+        </tbody>
+    </table>
+</div>
+<br><br><br><br><br><br><br><br>
+
+<app-afooter></app-afooter>

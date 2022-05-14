@@ -1,0 +1,23 @@
+.container-fluid{
+    font-family: 'Libre Baskerville', serif;
+    height:100vh;
+    background:url('../../../assets/images/slider3.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+    .jumbotron{
+        background-color:transparent;
+    }
+    .btncust{
+        float: right;
+    background: cornsilk;
+    color: #403740;
+    font-weight: bold;
+    }
+     .btncust:hover{
+        float: right;
+    background: #403740;
+    color: cornsilk;
+    font-weight: bold;
+    }

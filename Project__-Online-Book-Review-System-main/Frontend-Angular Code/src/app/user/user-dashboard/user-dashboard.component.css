@@ -1,0 +1,18 @@
+.display-4{
+    font-family: 'Libre Baskerville';
+    color: cornsilk;
+    text-shadow: 5px 7px 6px  #403740;
+}
+.blockcust {
+    background-color: green;
+   transition: transform .5s ease-in-out;
+  }
+  
+  .blockcust:hover {
+    -ms-transform: scale(1.05); /* IE 9 */
+    -webkit-transform: scale(1.05); /* Safari 3-8 */
+    transform: scale(1.05); 
+  }
+  p{
+    color: cornsilk;
+  }

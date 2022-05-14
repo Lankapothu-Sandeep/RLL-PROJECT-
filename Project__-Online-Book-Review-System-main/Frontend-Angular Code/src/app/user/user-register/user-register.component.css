@@ -1,0 +1,21 @@
+.jumbotron{
+    padding: 0px;
+    padding-top:5px;
+    height:100vh;
+    background:url('../../../assets/images/slider1.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+    label{
+        text-align :start;
+        font-size: 18px;
+    }
+    .btncust{
+        color: #0d0e0f;
+        background: cornsilk;
+        font-weight: bolder;
+    }
+    .form-group{
+        text-align :start;
+    }

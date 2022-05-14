@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Beau+Rivage&family=Libre+Baskerville:ital@1&family=Ms+Madi&family=Oswald:wght@200&family=Rubik+Moonrocks&family=Updock&family=Whisper&display=swap');
+
+#toptext{
+    background-color: #403740;
+    color: cornsilk;
+}
+
+#toptext p{
+    padding-left:23px;
+    text-align: start;
+    font-size: 36px;
+    font-weight: bold;
+    font-family: 'Libre Baskerville', serif;
+}
+p{
+   
+    text-align: center;
+}
+
+.pages{
+    text-align: center;
+    width: 100px;
+    margin-top: 2px;
+   
+}
+.btn{
+    color: cornsilk;
+    font-weight: bold;
+}
+.btn:hover{
+    background-color: cornsilk!important;
+    color:#403740;
+    font-weight: bold;
+} 
+.clippathbackground {
+    background: linear-gradient(114deg, #403740, transparent);
+    height: 800px;
+    clip-path: polygon(50% 45%, 100% 25%, 100% 0, 0 0, 0 25%);
+    margin-top: -122px;
+    z-index: -1;
+    position: relative;
+}
+.simapletext{
+    margin: auto;
+    font-family: 'Libre Baskerville';
+    color: cornsilk;
+    font-size: 25px;
+}
+.jumbotron {
+    background-color: #403740;
+    color: cornsilk;
+}
+.blink_me {
+    animation: blinker 1s linear infinite;
+  }
+  
+  @keyframes blinker {
+    50% {
+      opacity: 0;
+    }
+  }
+

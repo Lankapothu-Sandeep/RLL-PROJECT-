@@ -1,0 +1,47 @@
+<app-uheader></app-uheader>
+ 
+<div class="container-fluid  text-center text-capitalize">
+  <h1 style="color: cornsilk;font-family: ' BLibreaskerville';">Book List</h1>
+  
+<div class="container my-5">
+  
+  <div class="row">
+    <div class="col-sm-2">
+      <h5 style="border-radius: 4px;padding: 6px;background: #1f1b17;margin-top: 9px;text-align: center;color: cornsilk;">Search Here :</h5> 
+          </div>
+    <div class="col-sm-10">
+      <form class="form my-2">
+        <input class="form-control" type="search" placeholder="Search here for Book Id / Name / Author Name / Price/ Category / Seller" aria-label="Search" id="search">
+        
+      </form>
+    </div>
+
+  </div>
+ 
+  <table class="table" >
+    <thead>
+      <tr style="background: #0000009e!important;">
+        <th scope="col"  data-type="number">Book Id <i class="fa fa-sort"></i></th>
+        <th scope="col"  data-type="string">Book Author Name <i class="fa fa-sort"></i></th>
+        <th scope="col"  data-type="string">Book Name <i class="fa fa-sort"></i></th>
+        <th scope="col"  data-type="number">Book Price <i class="fa fa-sort"></i></th>
+        <th scope="col"  data-type="string">Book Category <i class="fa fa-sort"></i></th>
+        <th scope="col"  data-type="string">Book Seller <i class="fa fa-sort"></i></th>
+        <th scope="col">Click to Rate</th>
+      </tr>
+    </thead>
+    <tbody id="table">
+      <tr  id="myrow_{{i}}" *ngFor="let bk of book; let i = index"      >
+        <td >{{ i+1 }}</td>
+        <td>{{ bk.author }}</td>
+        <td>{{ bk.name }}</td>
+        <td>{{ bk.price }}</td>
+        <td>{{ bk.category }}</td>
+        <td>{{ bk.seller }}</td>
+        <td><button class="btn btncust" (click)="rateBook(bk.id)"><i class="fa fa-edit"> Rate This Book Now</i></button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<app-ufooter></app-ufooter>
